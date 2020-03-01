@@ -11,8 +11,8 @@ public class ProbIA5Board {
      *
 
     /* State data structure
-        vector with the parity of the coins (we can assume 0 = heads, 1 = tails
-     */
+    vector with the parity of the coins (we can assume 0 = heads, 1 = tails
+    */
 
     private int [] board;
     private static int [] solution;
@@ -51,25 +51,25 @@ public class ProbIA5Board {
         return 0;
     }
 
-     /* Goal test */
-     public boolean is_goal(){
-         // compute if board = solution
-         return Arrays.equals(board, solution);
-     }
+    /* Goal test */
+    public boolean is_goal(){
+        // compute if board = solution
+        return Arrays.equals(board, solution);
+    }
 
-     /* auxiliary functions */
+    /* auxiliary functions */
 
-     // Some functions will be needed for creating a copy of the state
+    // Some functions will be needed for creating a copy of the state
 
-     public int[] getBoard() {
-         return board.clone(); //return board.clone();
-     }
+    public int[] getBoard() {
+        return board.clone(); //return board.clone();
+    }
 
-     public int size() {
-         return board.length;
-     }
+    public int size() {
+        return board.length;
+    }
 
-     // Constructora sin goal (es static con la primera ya vale)
+    // Constructora sin goal (es static con la primera ya vale)
     public ProbIA5Board(int []init) {
         board = new int[init.length];
 
