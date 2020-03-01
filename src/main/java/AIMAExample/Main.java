@@ -1,3 +1,5 @@
+package AIMAExample;
+
 import IA.ProbIA5.ProbIA5Board;
 import IA.ProbIA5.ProbIA5GoalTest;
 import IA.ProbIA5.ProbIA5HeuristicFunction;
